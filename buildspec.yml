@@ -5,15 +5,15 @@ phases:
       java: corretto8
   pre_build:
     commands:
-      -echo "Entered into pre build"
-      -gradlew clean
+      - echo "Entered into pre build"
+      - gradlew clean
   build:
     commands:
-      -echo "Entered into build"
-      -gradlew build
+      - echo "Entered into build"
+      - gradlew build
   post_build:
     commands:
-      -echo "Entered into post build"
+      - echo "Entered into post build"
 artifacts:
   files:
     - app/build/libs/*.war
