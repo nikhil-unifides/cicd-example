@@ -6,11 +6,11 @@ phases:
   pre_build:
     commands:
       - echo "Entered into pre build"
-      - ./gradlew clean
+      - bash ./gradlew clean
   build:
     commands:
       - echo "Entered into build"
-      - ./gradlew build
+      - bash ./gradlew build
   post_build:
     commands:
       - echo "Entered into post build"
