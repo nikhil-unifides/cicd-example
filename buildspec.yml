@@ -14,6 +14,6 @@ phases:
   post_build:
     commands:
       -echo "Entered into post build"
-  artifacts:
-    files:
-      - app/build/libs/*.war
+artifacts:
+  files:
+    - app/build/libs/*.war
