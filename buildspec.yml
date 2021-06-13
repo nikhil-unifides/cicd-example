@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  pre_build:
+    commands:
+      -echo "Entered into pre build"
+      -gradlew clean
+  build:
+    commands:
+      -echo "Entered into build"
+      -gradlew build
+  post_build:
+    commands:
+      -echo "Entered into post build"
+  artifacts:
+    files:
+      - app/build/libs/*.war
