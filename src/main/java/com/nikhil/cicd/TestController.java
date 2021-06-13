@@ -10,6 +10,6 @@ public class TestController {
 
     @GetMapping(value = "/sayhello")
     public String abc(){
-        return "Hello Nikhil";
+        return "version 12";
     }
 }
