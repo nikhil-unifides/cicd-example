@@ -16,4 +16,4 @@ phases:
       - echo "Entered into post build"
 artifacts:
   files:
-    - build/libs/*.war
+    - build/libs/*SNAPSHOT.war
